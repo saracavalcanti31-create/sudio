@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Studio Bella</title>
+<meta name="description" content="Procedimentos exclusivos realizados por especialistas. Resultados que falam por si.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23C8624E'/><text x='50' y='68' font-family='Georgia,serif' font-size='58' font-weight='700' text-anchor='middle' fill='%23ffffff'>S</text></svg>">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Studio Bella">
+<meta property="og:description" content="Procedimentos exclusivos realizados por especialistas. Resultados que falam por si.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Studio Bella">
+<meta name="twitter:description" content="Procedimentos exclusivos realizados por especialistas. Resultados que falam por si.">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--ac:#444444;--ac-raw:#C8624E;--ad:#8B3D2C;--al:#FDF5F3;--bg:#FFFFFF;--bg2:#FDF5F3;--tx:#1A1A1A;--tx2:#666666;--card:#FAFAFA;--bdr:#EBEBEB;--fw:400}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Cormorant Garamond', 'Georgia', serif;font-weight:var(--fw);background:var(--bg);color:var(--tx);line-height:1.6;overflow-x:hidden}
+section[id],div[id="mapa"]{scroll-margin-top:68px;-webkit-scroll-margin-top:68px}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit}
+.container{width:100%;max-width:1140px;margin:0 auto;padding:0 20px}
+@media(min-width:768px){.container{padding:0 32px}}
+@media(min-width:1200px){.container{padding:0 48px}}
+
+/* BUTTONS */
+.btn-ac{display:inline-block;padding:14px 28px;background:var(--ac);color:#ffffff;border-radius:4px;font-family:inherit;font-weight:600;font-size:15px;letter-spacing:.3px;transition:.2s;cursor:pointer;border:none;text-align:center}
+.btn-ac:hover{background:var(--ad);transform:translateY(-1px)}
+.btn-out{display:inline-block;padding:13px 28px;border:2px solid var(--ac);color:var(--ac);border-radius:4px;font-family:inherit;font-weight:600;font-size:15px;letter-spacing:.3px;transition:.2s;cursor:pointer}
+.btn-out:hover{background:var(--ac);color:#fff}
+
+
+
+
+/* NAV */
+
+nav{position:fixed;top:0;left:0;right:0;z-index:200;height:60px;display:flex;align-items:center;padding:0 20px;
+  background:rgba(255,255,255,.95);
+  border-bottom:1px solid var(--bdr);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+
+@media(min-width:768px){nav{padding:0 32px;height:68px}}
+.nav-logo{font-size:17px;font-weight:600;color:var(--ac);flex:1}
+.nav-logo img{height:38px;object-fit:contain}
+.nav-links{display:none;list-style:none;gap:28px}
+@media(min-width:900px){.nav-links{display:flex}}
+.nav-links a{font-size:14px;font-weight:500;color:#666666;transition:.2s}
+.nav-links a:hover{color:var(--ac);opacity:.8}
+.nav-cta{display:none}
+@media(min-width:900px){.nav-cta{display:flex;gap:12px;align-items:center;margin-left:28px}}
+.nav-cta .btn-ac{padding:10px 20px;font-size:13px;color:#ffffff;}
+.hamburger{display:flex;flex-direction:column;gap:5px;cursor:pointer;padding:6px;margin-left:8px}
+.hamburger span{width:22px;height:2px;background:#666666;border-radius:1px;transition:.3s;display:block}
+.hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+@media(min-width:900px){.hamburger{display:none}}
+.mobile-nav{display:none;position:fixed;top:60px;left:0;right:0;z-index:190;
+  background:#fff;
+  border-bottom:1px solid var(--bdr);padding:20px}
+@media(min-width:768px){.mobile-nav{top:68px}}
+.mobile-nav.open{display:block}
+.mobile-nav ul{list-style:none;display:flex;flex-direction:column;gap:0}
+.mobile-nav a:not(.btn-ac){display:block;padding:14px 0;font-size:16px;font-weight:500;border-bottom:1px solid var(--bdr);color:var(--tx)}
+.mobile-nav a.btn-ac{display:block;text-align:center;margin-top:16px;width:100%;color:#ffffff}
+.mobile-nav a:last-child{border-bottom:none}
+
+/* HERO */
+.hero-h1{font-size:72px}
+@media(max-width:640px){.hero-h1{font-size:40px}}
+@media(max-width:640px){
+  #inicio{min-height:auto!important;padding-top:80px!important}
+  #inicio .container{padding-top:54px!important;padding-bottom:54px!important}
+  .hero-sub{margin-bottom:48px!important}
+}
+
+
+/* CORES POR SEÇÃO */
+
+
+/* STATS */
+.stats{background:var(--bg2);padding:0}
+.stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--bdr)}
+@media(min-width:640px){.stats-grid{grid-template-columns:repeat(4,1fr)}}
+.stat{background:var(--bg2);padding:64px 16px;text-align:center}
+@media(max-width:639px){.stat{padding:26px 16px}}
+.stat-n{font-size:clamp(26px,5vw,38px);font-weight:700;color:var(--ac);line-height:1;letter-spacing:-1px}
+.stat-l{font-size:12px;color:var(--tx2);margin-top:6px;line-height:1.3}
+
+/* SERVICES */
+.services{padding:48px 0}
+@media(min-width:768px){.services{padding:62px 0}}
+.sec-tag{display:inline-block;padding:5px 14px;border:1px solid var(--ac);color:var(--ac);border-radius:20px;font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:16px}
+.sec-title{font-size:40px;line-height:1.15;margin-bottom:8px;font-weight:var(--fw)}
+.sec-title em{font-style:italic;color:#444444}
+.hero-h1 em{font-style:italic;color:#444444}
+.hero-sub em{font-style:italic;color:#444444}
+.sec-sub{font-size:15px;color:var(--tx2);max-width:520px;line-height:1.7;margin-bottom:40px}
+@media(max-width:640px){.sec-title{font-size:25px}.sec-sub{margin-bottom:20px}}
+.svc-grid{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:600px){.svc-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.svc-grid{grid-template-columns:1fr 1fr 1fr}}
+.svc-card{background:var(--card);border:1px solid var(--bdr);border-radius:8px;padding:20px;display:flex;gap:14px;align-items:flex-start;transition:.2s}
+.svc-card:hover{border-color:var(--ac);transform:translateY(-2px);box-shadow:0 4px 20px rgba(0,0,0,.08)}
+.svc-emoji{font-size:26px;flex-shrink:0;line-height:1;width:32px;height:32px;display:flex;align-items:center;justify-content:center}
+.svc-emoji svg{width:28px;height:28px;stroke:var(--ac)}
+.svc-name{font-size:15px;font-weight:600;margin-bottom:4px}
+.svc-desc{font-size:13px;color:var(--tx2);line-height:1.5}
+.svc-desc p,.test-txt p,.faq-a p,.about-text p,.sec-sub p,.hero-sub p,.hero-h1 p{margin:0 0 6px;line-height:inherit}
+.svc-desc p:last-child,.test-txt p:last-child,.faq-a p:last-child,.about-text p:last-child,.sec-sub p:last-child,.hero-sub p:last-child,.hero-h1 p:last-child{margin-bottom:0}
+.hero-h1 p{font-size:inherit;font-weight:inherit;letter-spacing:inherit}
+.hero-h1 p:empty,.hero-sub p:empty{display:none}
+.svc-desc ul,.svc-desc ol,.test-txt ul,.faq-a ul,.faq-a ol{padding-left:18px;margin:4px 0}
+
+/* ABOUT */
+.about{padding:48px 0;background:var(--bg2)}
+@media(min-width:768px){.about{padding:62px 0}}
+.about-inner{display:flex;flex-direction:column;gap:36px}
+@media(min-width:900px){.about-inner{flex-direction:row;gap:64px;align-items:center}}
+.about-img{width:100%;border-radius:8px;overflow:hidden;aspect-ratio:4/5;min-height:280px;background:var(--card);position:relative;flex-shrink:0}
+@media(min-width:900px){.about-img{width:42%}}
+.about-img img{width:100%;height:100%;object-fit:cover}
+.about-img .overlay{position:absolute;inset:0;border-radius:8px}
+.about-img-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--tx2)}
+.about-text{flex:1}
+.about-bullets{list-style:none;display:flex;flex-direction:column;gap:10px;margin:20px 0 28px}
+.about-bullets li{display:flex;gap:10px;align-items:flex-start;font-size:14px}
+.about-bullets li::before{content:'✓';color:var(--ac);font-weight:700;flex-shrink:0;margin-top:1px}
+
+/* TESTIMONIALS */
+.testimonials{padding:48px 0}
+@media(min-width:768px){.testimonials{padding:62px 0}}
+.test-grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:600px){.test-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.test-grid{grid-template-columns:repeat(3,1fr)}}
+.test-card{background:var(--card);border:1px solid var(--bdr);border-radius:8px;padding:22px}
+.test-av{width:42px;height:42px;border-radius:50%;background:var(--ac);display:flex;align-items:center;justify-content:center;font-size:17px;font-weight:700;color:#fff;margin-bottom:14px;flex-shrink:0}
+.test-name{font-weight:600;font-size:14px;margin-bottom:2px}
+.test-proc{font-size:12px;color:var(--ac);margin-bottom:12px;font-weight:500}
+.test-txt{font-size:14px;color:var(--tx2);line-height:1.65}
+.test-stars{color:var(--ac);font-size:13px;margin-bottom:10px;letter-spacing:2px}
+
+/* CTA SECTION */
+.cta-sec{background:var(--ac-raw);padding:64px 0;text-align:center}
+@media(min-width:768px){.cta-sec{padding:80px 0}}
+.cta-tag{display:inline-block;padding:5px 14px;border:1px solid rgba(0,0,0,.25);color:#111111;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:16px}
+.cta-h{font-size:clamp(26px,5vw,44px);line-height:1.15;color:#111111;font-weight:var(--fw);margin-bottom:12px}
+.cta-h em{font-style:italic;color:rgba(0,0,0,.65)}
+.cta-sub{font-size:15px;color:rgba(0,0,0,.65);max-width:480px;margin:0 auto 32px;line-height:1.7}
+.btn-white{display:inline-block;background:#111111;color:var(--ac-raw);padding:14px 36px;border-radius:4px;font-family:inherit;font-weight:700;font-size:15px;transition:.2s}
+.btn-white:hover{background:rgba(255,255,255,.92);transform:translateY(-1px)}
+
+
+/* FOOTER */
+footer{background:#f4f4f4;border-top:1px solid var(--bdr);padding:48px 0 28px;text-align:center}
+.footer-logo{font-size:19px;font-weight:600;color:var(--ac);margin-bottom:16px;display:flex;justify-content:center;align-items:center}
+.footer-links{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-bottom:20px}
+.footer-links a{font-size:13px;color:var(--tx2);transition:.2s}
+.footer-links a:hover{color:var(--ac)}
+.footer-copy{font-size:12px;color:var(--tx2)}
+.footer-social{display:flex;flex-direction:column;align-items:center;gap:10px;margin-bottom:24px}
+@media(min-width:768px){.footer-social{flex-direction:row;justify-content:center;gap:16px}}
+.footer-social-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border:1px solid var(--bdr);border-radius:6px;color:var(--tx2);font-size:13px;font-weight:500;transition:.2s;text-decoration:none}
+.footer-social-btn:hover{border-color:var(--ac);color:var(--ac)}
+.footer-social-btn svg{flex-shrink:0}
+.footer-horario{display:flex;flex-direction:column;align-items:center;gap:4px;margin-bottom:20px;font-size:12px;color:var(--tx2)}
+.footer-horario-title{font-weight:600;color:var(--tx);margin-bottom:4px;font-size:13px}
+
+
+/* WA FLOAT */
+.wa-float{position:fixed;bottom:24px;right:24px;z-index:300;background:#25d366;color:#fff;border-radius:50%;width:58px;height:58px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);transition:.2s;text-decoration:none}
+.wa-float:hover{transform:translateY(-2px) scale(1.06);box-shadow:0 6px 28px rgba(37,211,102,.5)}
+
+/* FADE IN — progressive enhancement: visível sem JS, animado com JS */
+@keyframes fi-in{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.fi-js .fi{opacity:0;transform:translateY(20px)}
+.fi-js .fi.v{animation:fi-in .55s ease both}
+
+/* ── DETALHE: barra decorativa sob títulos de seção ── */
+.sec-title::after{content:'';display:block;width:40px;height:2px;background:var(--ac);border-radius:2px;margin:10px auto 0}
+
+/* ── DETALHE: pergunta aberta no FAQ ── */
+.faq-item.open .faq-q{color:var(--ac)}
+
+/* FAQ */
+.faq-item{border-bottom:1px solid var(--bdr);padding:18px 0}
+.faq-q{display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-size:15px;font-weight:500;gap:16px;transition:color .2s}
+.faq-icon{font-size:18px;color:var(--ac);flex-shrink:0;transition:.2s}
+.faq-item.open .faq-icon{transform:rotate(45deg)}
+.faq-a{display:none;padding-top:10px;font-size:14px;color:var(--tx2);line-height:1.7}
+.faq-item.open .faq-a{display:block}
+
+/* GALLERY */
+.gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+@media(min-width:600px){.gallery-grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:900px){.gallery-grid{grid-template-columns:repeat(4,1fr)}}
+@media(min-width:1200px){.gallery-grid{grid-template-columns:repeat(5,1fr)}}
+.gallery-grid img{width:100%;aspect-ratio:4/5;min-height:180px;object-fit:cover;border-radius:6px;transition:.2s}
+.gallery-grid img:hover{outline:3px solid var(--ac);outline-offset:3px;opacity:.92}
+/* GALLERY SLIDER */
+.gal-slider{position:relative;overflow:hidden;border-radius:10px;user-select:none;max-width:480px;margin:0 auto}
+.gal-track{display:flex;transition:transform .4s cubic-bezier(.4,0,.2,1);will-change:transform}
+.gal-slide{flex:0 0 100%;min-width:100%}
+.gal-slide img{width:100%;aspect-ratio:4/5;min-height:280px;object-fit:cover;display:block}
+.gal-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.45);border:none;color:#fff;font-size:28px;line-height:1;padding:8px 14px;cursor:pointer;border-radius:6px;z-index:2;transition:.2s;backdrop-filter:blur(2px)}
+.gal-btn:hover{background:rgba(0,0,0,.7)}
+.gal-prev{left:10px}
+.gal-next{right:10px}
+.gal-dots{display:flex;justify-content:center;gap:8px;padding:12px 0 4px}
+.gal-dot{width:8px;height:8px;border-radius:50%;background:var(--bdr);border:none;cursor:pointer;padding:0;transition:.2s;flex-shrink:0}
+.gal-dot.active{background:var(--ac);transform:scale(1.3)}
+
+/* PRICE TABLE */
+.price-table{width:100%;border-collapse:collapse;max-width:600px;margin:0 auto}
+.price-table th,.price-table td{padding:13px 16px;border-bottom:1px solid var(--bdr);text-align:left;font-size:14px}
+.price-table th{font-weight:600;color:var(--ac);border-bottom:2px solid var(--ac)}
+.price-table tbody tr:hover td{background:rgba(0,0,0,.025)}
+
+/* CONTACT FORM */
+.contact-form input,.contact-form textarea{
+  width:100%;padding:12px 14px;background:var(--card);border:1px solid var(--bdr);border-radius:6px;
+  color:var(--tx);font-family:inherit;font-size:14px;margin-bottom:10px;outline:none;transition:.2s
+}
+.contact-form input:focus,.contact-form textarea:focus{border-color:var(--ac);box-shadow:0 0 0 3px rgba(var(--ac-rgb),.1)}
+.contact-form button{background:var(--ac);color:#ffffff;border:none;padding:12px 28px;border-radius:6px;font-family:inherit;font-weight:600;font-size:14px;cursor:pointer;width:100%;transition:.2s}
+.contact-form button:hover{opacity:.88}
+
+/* CERTS */
+.cert-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+.cert-item{background:var(--card);border:1px solid var(--bdr);border-radius:8px;padding:14px 24px;font-size:13px;font-weight:500;display:flex;align-items:center;gap:8px;transition:.2s}
+.cert-item::before{content:'✓';color:var(--ac);font-weight:700}
+.cert-item:hover{border-color:var(--ac);transform:translateY(-2px)}
+
+
+.svc-card{position:relative;overflow:hidden}
+.svc-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--ac);transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.4,0,.2,1)}
+.svc-card:hover{transform:translateY(-8px);box-shadow:0 20px 60px rgba(0,0,0,.15);border-color:var(--ac)}
+.svc-card:hover::after{transform:scaleX(1)}
+.svc-emoji{transition:transform .35s cubic-bezier(.34,1.56,.64,1)}
+.svc-card:hover .svc-emoji{transform:scale(1.3) rotate(-8deg)}
+
+
+
+@keyframes cta-pulse{0%,100%{box-shadow:0 4px 20px #C8624E44;transform:scale(1)}55%{box-shadow:0 4px 36px #C8624E88;transform:scale(1.04)}}
+#inicio .btn-ac,.cta-sec .btn-ac{animation:cta-pulse 2.8s ease-in-out infinite}
+
+
+
+@keyframes sr-in{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+.fi-js .sr{opacity:0;transform:translateY(30px)}
+.fi-js .sr.sr-vis{animation:sr-in .65s ease both}
+
+
+
+.test-grid{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;padding-bottom:16px;grid-template-columns:unset}
+.test-grid::-webkit-scrollbar{height:4px}
+.test-grid::-webkit-scrollbar-track{background:var(--bdr);border-radius:2px}
+.test-grid::-webkit-scrollbar-thumb{background:var(--ac);border-radius:2px}
+.test-card{flex:0 0 85%;scroll-snap-align:start}
+@media(min-width:600px){.test-card{flex:0 0 48%}}
+@media(min-width:900px){.test-card{flex:0 0 31%}}
+
+
+
+
+@keyframes popIn{from{opacity:0;transform:scale(.85) translateY(12px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.wa-popup{display:none;position:fixed;bottom:96px;right:24px;z-index:299;width:280px;max-width:calc(100vw - 48px);background:var(--card);border:1px solid var(--bdr);border-radius:14px;padding:18px;box-shadow:0 8px 48px rgba(0,0,0,.18)}
+.wa-popup.show{display:block;animation:popIn .35s cubic-bezier(.34,1.56,.64,1) forwards}
+.wa-popup-close{position:absolute;top:8px;right:10px;background:none;border:none;font-size:22px;cursor:pointer;line-height:1;color:var(--tx2);padding:2px 4px;border-radius:4px;transition:.15s}
+.wa-popup-close:hover{color:var(--tx);background:var(--bdr)}
+.wa-popup-msg{font-size:13px;line-height:1.65;color:var(--tx);margin-bottom:14px;padding-right:14px}
+.wa-popup-btn{display:flex;align-items:center;justify-content:center;gap:8px;background:#25d366;color:#fff;padding:10px 16px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;transition:.2s}
+.wa-popup-btn:hover{background:#20b858;transform:translateY(-1px)}
+
+
+
+
+img.emoji{height:1.4em;width:1.4em;vertical-align:-.2em;display:inline-block}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <a href="#inicio" class="nav-logo">Studio Bella</a>
+  <ul class="nav-links"><li><a href="#inicio">Início</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#sobre">Sobre</a></li></ul>
+  <div class="nav-cta">
+    <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="btn-ac" >Agendar →</a>
+  </div>
+  <div class="hamburger" id="hbg" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-nav" id="mnav">
+  <ul>
+    <li><a href="#inicio" onclick="closeNav()">Início</a></li><li><a href="#servicos" onclick="closeNav()">Serviços</a></li><li><a href="#sobre" onclick="closeNav()">Sobre</a></li>
+    <li><a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="btn-ac" onclick="closeNav()" >Agendar →</a></li>
+  </ul>
+</div>
+
+<section id="inicio" style="position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;padding-top:60px;background:linear-gradient(135deg,#8B3D2C,#C8624E);">
+  
+  <div class="container" style="position:relative;z-index:1;padding-top:120px;padding-bottom:120px">
+    <div class="fi" style="max-width:680px;margin:0 auto">
+      <div style="display:inline-block;padding:5px 14px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:20px;border:1px solid #C8624E;color:#C8624E">★ Especialistas em Estética Avançada</div>
+      <div class="hero-h1" role="heading" aria-level="1" style="line-height:1.06;font-weight:var(--fw);letter-spacing:-.5px;margin-bottom:0;color:#1A1A1A">Beleza que <em>transforma</em></div>
+      <div class="hero-sub" style="font-size:17px;color:#666666;margin-top:6px;margin-bottom:96px;line-height:1.75;max-width:520px;margin-left:auto;margin-right:auto">Procedimentos exclusivos realizados por especialistas. Resultados que falam por si.</div>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center">
+        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="btn-ac" >Agendar →</a>
+        <a href="#servicos" class="btn-out" >Ver Serviços</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="stats-grid">
+    <div class="stat fi"><div class="stat-n" data-n="2.000+">2.000+</div><div class="stat-l">Clientes atendidas</div></div><div class="stat fi"><div class="stat-n" data-n="98%">98%</div><div class="stat-l">Satisfação</div></div><div class="stat fi"><div class="stat-n" data-n="8+">8+</div><div class="stat-l">Anos de experiência</div></div><div class="stat fi"><div class="stat-n" data-n="15+">15+</div><div class="stat-l">Procedimentos</div></div>
+  </div>
+</div>
+
+<section class="services" id="servicos">
+  <div class="container">
+    <div class="fi">
+      <div class="sec-tag">Serviços</div>
+      <h2 class="sec-title">O que <em>oferecemos</em></h2>
+      <p class="sec-sub">Tratamentos exclusivos desenvolvidos para realçar sua beleza natural.</p>
+    </div>
+    <div class="svc-grid">
+      
+        <div class="svc-card fi">
+          <div class="svc-emoji">✨</div>
+          <div><div class="svc-name">Botox</div><div class="svc-desc">Resultados naturais e duradouros</div></div>
+        </div>
+        <div class="svc-card fi">
+          <div class="svc-emoji">💆</div>
+          <div><div class="svc-name">Limpeza de Pele</div><div class="svc-desc">Pele renovada e luminosa</div></div>
+        </div>
+        <div class="svc-card fi">
+          <div class="svc-emoji">🌸</div>
+          <div><div class="svc-name">Bioestimuladores</div><div class="svc-desc">Rejuvenescimento profundo</div></div>
+        </div>
+        <div class="svc-card fi">
+          <div class="svc-emoji">💉</div>
+          <div><div class="svc-name">Preenchimento</div><div class="svc-desc">Contornos perfeitos e harmoniosos</div></div>
+        </div>
+        <div class="svc-card fi">
+          <div class="svc-emoji">🔆</div>
+          <div><div class="svc-name">Peeling</div><div class="svc-desc">Tratamento para manchas e acne</div></div>
+        </div>
+        <div class="svc-card fi">
+          <div class="svc-emoji">⚡</div>
+          <div><div class="svc-name">Laser</div><div class="svc-desc">Tecnologia de ponta para sua pele</div></div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="sobre">
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-img fi"><div class="about-img-placeholder">Foto sobre a clínica</div></div>
+      <div class="about-text fi" style="text-align:left">
+        <div class="sec-tag">Sobre nós</div>
+        <h2 class="sec-title" style="text-align:left">Nossa <em>história</em></h2>
+        <p style="color:var(--tx2);line-height:1.8;margin-top:12px;text-align:left">Somos uma clínica de estética avançada dedicada a realçar sua beleza natural com os melhores tratamentos do mercado.</p>
+        <ul class="about-bullets" style="align-items:flex-start">
+          <li>Profissionais certificados e especializados</li><li>Equipamentos de última geração</li><li>Ambiente exclusivo e acolhedor</li><li>Protocolos personalizados para cada paciente</li><li>Resultados comprovados e naturais</li>
+        </ul>
+        <div style="text-align:left"><a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="btn-ac" >Agendar →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials" id="depoimentos">
+  <div class="container">
+    <div class="fi" style="text-align:center;margin-bottom:40px">
+      <div class="sec-tag">Depoimentos</div>
+      <h2 class="sec-title">O que dizem <em>nossas clientes</em></h2>
+    </div>
+    <div class="test-grid">
+      
+        <div class="test-card fi">
+          <div class="test-stars">★★★★★</div>
+          <div class="test-av">A</div>
+          <div class="test-name">Ana Paula</div>
+          <div class="test-txt">"Resultado incrível! Me sinto muito mais confiante."</div>
+        </div>
+        <div class="test-card fi">
+          <div class="test-stars">★★★★★</div>
+          <div class="test-av">M</div>
+          <div class="test-name">Mariana Silva</div>
+          <div class="test-txt">"Atendimento impecável, super recomendo!"</div>
+        </div>
+        <div class="test-card fi">
+          <div class="test-stars">★★★★★</div>
+          <div class="test-av">C</div>
+          <div class="test-name">Carla Mendes</div>
+          <div class="test-txt">"Pele transformada em poucos dias. Maravilhoso!"</div>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<section class="cta-sec" id="cta">
+  <div class="container">
+    <div class="fi">
+      <div class="cta-tag" style="">
+        Agende agora
+      </div>
+      <h2 class="cta-h">Agende sua <em>consulta hoje</em></h2>
+      <p class="cta-sub">Vagas limitadas — Garanta o seu horário agora</p>
+      <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="btn-white" style="background:#ffffff;color:var(--ac-raw)">Falar no WhatsApp →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-logo">Studio Bella</div>
+    <div class="footer-links">
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      
+      
+      
+    </div>
+    
+    
+    <div class="footer-copy">© 2025 Studio Bella. Todos os direitos reservados.</div>
+  </div>
+</footer>
+
+<div id="wa-popup" class="wa-popup">
+  <button class="wa-popup-close" onclick="dismissPopup()" title="Fechar">×</button>
+  <p class="wa-popup-msg">Olá! Quer agendar uma avaliação grátis? 😊</p>
+  <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="wa-popup-btn">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.012a.75.75 0 0 0 .931.931l5.163-1.471A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.9 0-3.68-.524-5.2-1.437l-.372-.222-3.862 1.1 1.1-3.855-.239-.383A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+    Falar no WhatsApp
+  </a>
+</div>
+<a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="wa-float" title="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.012a.75.75 0 0 0 .931.931l5.163-1.471A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.9 0-3.68-.524-5.2-1.437l-.372-.222-3.862 1.1 1.1-3.855-.239-.383A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+</a>
+
+<script>
+document.documentElement.classList.add('fi-js');
+function toggleNav(){
+  document.getElementById('hbg').classList.toggle('open');
+  document.getElementById('mnav').classList.toggle('open');
+}
+function closeNav(){
+  document.getElementById('hbg').classList.remove('open');
+  document.getElementById('mnav').classList.remove('open');
+}
+document.addEventListener('DOMContentLoaded',function(){
+  if(window.twemoji) twemoji.parse(document.body,{folder:'svg',ext:'.svg',base:'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/'});
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      var id=this.getAttribute('href').slice(1);
+      if(!id)return;
+      var target=document.getElementById(id);
+      if(target){
+        e.preventDefault();
+        closeNav();
+        setTimeout(function(){
+          var y=target.getBoundingClientRect().top+window.scrollY-72;
+          window.scrollTo({top:Math.max(0,y),behavior:'smooth'});
+        },60);
+      }
+    });
+  });
+});
+function tFaq(i){document.getElementById('faq'+i).classList.toggle('open')}
+setTimeout(function(){document.querySelectorAll('.fi').forEach(function(e){e.classList.add('v');});},300);
+if('IntersectionObserver' in window){
+  var _fiObs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('v');_fiObs.unobserve(e.target);}});},{threshold:0,rootMargin:'0px 0px 120px 0px'});
+  document.querySelectorAll('.fi').forEach(function(el){_fiObs.observe(el);});
+}
+
+(function(){
+  var stats=document.querySelector('.stats');
+  if(!stats)return;
+  var done=false;
+  new IntersectionObserver(function(entries,o){
+    if(done||!entries[0].isIntersecting)return;
+    done=true;o.disconnect();
+    document.querySelectorAll('.stat-n').forEach(function(el){
+      var raw=(el.getAttribute('data-n')||el.textContent||'').trim();
+      var sfx=raw.replace(/^[d.,s]+/,'');
+      var num=parseFloat(raw.replace(/./g,'').replace(',','.').replace(/[^0-9.]/g,''));
+      if(isNaN(num)||num===0)return;
+      var start=performance.now(),dur=1500;
+      (function step(t){
+        var p=Math.min((t-start)/dur,1),e=1-Math.pow(1-p,3);
+        el.textContent=Math.round(e*num).toLocaleString('pt-BR')+sfx;
+        if(p<1)requestAnimationFrame(step);
+      })(start);
+    });
+  },{threshold:0.4}).observe(stats);
+})();
+
+
+(function(){
+  var hero=document.querySelector('#inicio');
+  if(!hero)return;
+  var iy=50;
+  window.addEventListener('scroll',function(){
+    hero.style.backgroundPositionY='calc('+iy+'% + '+(window.scrollY*0.28).toFixed(1)+'px)';
+  },{passive:true});
+})();
+
+
+(function(){
+  var sel='.sec-tag,.sec-title,.sec-sub,.svc-card,.test-card,.about-text,.about-bullets,.faq-item,.equipe-card,.cert-item,.precos-table,.gal-slider,.gallery-grid,.ad-wrap,.contato-form,.equipe-card';
+  document.querySelectorAll(sel).forEach(function(el){el.classList.add('sr');});
+  if(!('IntersectionObserver' in window))return document.querySelectorAll('.sr').forEach(function(el){el.classList.add('sr-vis');});
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('sr-vis');io.unobserve(e.target);}});
+  },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.sr').forEach(function(el){io.observe(el);});
+})();
+
+
+(function(){
+  var grid=document.querySelector('.test-grid');
+  if(!grid)return;
+  var iv=setInterval(function(){
+    var card=grid.querySelector('.test-card');
+    if(!card)return;
+    var max=grid.scrollWidth-grid.clientWidth;
+    if(max<=0){clearInterval(iv);return;}
+    var next=grid.scrollLeft+(card.offsetWidth+16);
+    grid.scrollTo({left:next>=max-4?0:next,behavior:'smooth'});
+  },3800);
+  grid.addEventListener('pointerdown',function(){clearInterval(iv);},{once:true});
+})();
+
+
+
+(function(){
+  try{if(sessionStorage.getItem('wp_dismissed'))return;}catch(e){}
+  setTimeout(function(){
+    var p=document.getElementById('wa-popup');
+    if(p)p.classList.add('show');
+  },4000);
+})();
+function dismissPopup(){
+  var p=document.getElementById('wa-popup');
+  if(p)p.classList.remove('show');
+  try{sessionStorage.setItem('wp_dismissed','1');}catch(e){}
+}
+
+
+
+</script>
+<script id="gerador-dados" type="application/json">{"versao":"2.0","tema":"light","paleta":"salmon","customColor":"","fonte":"Cormorant Garamond","navType":"texto","nome":"Studio Bella","whatsapp":"5511999999999","wmsg":"Olá! Gostaria de agendar uma consulta.","endereco":"","email":"","badge":"★ Especialistas em Estética Avançada","sub":"Procedimentos exclusivos realizados por especialistas. Resultados que falam por si.","heroOpacity":40,"sobreOpacity":0,"stats":[{"n":"2.000+","l":"Clientes atendidas"},{"n":"98%","l":"Satisfação"},{"n":"8+","l":"Anos de experiência"},{"n":"15+","l":"Procedimentos"}],"servicos":[{"e":"✨","n":"Botox","d":"Resultados naturais e duradouros","iconColor":""},{"e":"💆","n":"Limpeza de Pele","d":"Pele renovada e luminosa","iconColor":""},{"e":"🌸","n":"Bioestimuladores","d":"Rejuvenescimento profundo","iconColor":""},{"e":"💉","n":"Preenchimento","d":"Contornos perfeitos e harmoniosos","iconColor":""},{"e":"🔆","n":"Peeling","d":"Tratamento para manchas e acne","iconColor":""},{"e":"⚡","n":"Laser","d":"Tecnologia de ponta para sua pele","iconColor":""}],"sobreTxt":"Somos uma clínica de estética avançada dedicada a realçar sua beleza natural com os melhores tratamentos do mercado.","bullets":["Profissionais certificados e especializados","Equipamentos de última geração","Ambiente exclusivo e acolhedor","Protocolos personalizados para cada paciente","Resultados comprovados e naturais"],"depoimentos":[{"i":"A","n":"Ana Paula","p":"Botox","t":"Resultado incrível! Me sinto muito mais confiante.","foto":"","stars":5},{"i":"M","n":"Mariana Silva","p":"Preenchimento","t":"Atendimento impecável, super recomendo!","foto":"","stars":5},{"i":"C","n":"Carla Mendes","p":"Limpeza de Pele","t":"Pele transformada em poucos dias. Maravilhoso!","foto":"","stars":5}],"ctaSub":"Vagas limitadas — Garanta o seu horário agora","fdesc":"Estética avançada com ciência e arte.","fcopy":"© 2025 Studio Bella. Todos os direitos reservados.","blocos":{"faq":false,"galeria":false,"mapa":false,"video":false,"precos":false,"certs":false,"contato":false,"antesDepois":false,"equipe":false},"faqItems":[{"p":"Quais procedimentos vocês oferecem?","r":"Oferecemos botox, preenchimento, bioestimuladores, peelings, laser e muito mais."},{"p":"Preciso de consulta prévia?","r":"Sim, realizamos uma avaliação inicial gratuita para indicar o melhor protocolo para você."}],"mapaEmbed":"","videoUrl":"","precosItems":[{"nome":"Consulta","preco":"Gratuita"},{"nome":"Botox","preco":"R$ 800"},{"nome":"Preenchimento","preco":"R$ 1.200"}],"certsItems":["CRM/CRO Registrado","Membro SBME","ISO 9001"],"fontSizes":{"nav":17,"hero":72,"sec":40,"body":15},"sectionOrder":["stats","servicos","sobre","depoimentos","faq","galeria","video","mapa","precos","certs","equipe","antesDepois","contato","cta"],"sobreImgX":50,"sobreImgY":50,"imagens":{"hero":"","sobre":"","logo":""}}</script>
+</body>
+</html>
